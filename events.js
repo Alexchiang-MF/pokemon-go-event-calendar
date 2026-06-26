@@ -7,7 +7,8 @@
  *    title       活動名稱 (必填)
  *    type        活動類型 (必填), 只能填以下四種之一:
  *                  "community"  -> 社群日 Community Day
- *                  "raid"       -> 團體戰 Raid (含五星/超級/暗影/極巨/團戰時刻)
+ *                  "raid"       -> 團體戰 Raid (五星/超級/暗影/極巨星期一/團戰日)
+ *                  "dinner"     -> 晚餐約會 (每週三 18:00-19:00 團戰時刻)
  *                  "spotlight"  -> 聚焦時刻 Spotlight Hour
  *                  "special"    -> 季節 / 特殊活動
  *    start       開始時間 (必填), 格式: "YYYY-MM-DD HH:mm" (24 小時制, 台灣時間)
@@ -246,17 +247,17 @@ const EVENTS = [
     highlights: ["極巨化醜醜魚*"]
   },
 
-  /* ============== 晚餐約會 / 團戰時刻 (18:00–19:00) ============== */
+  /* ============== 晚餐約會 (每週三 18:00–19:00 團戰時刻) ============== */
   {
     title: "晚餐約會:傳說三神鳥",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-01 18:00",
     end: "2026-07-01 19:00",
     highlights: ["急凍鳥*、閃電鳥*、火焰鳥*"]
   },
   {
     title: "晚餐約會:GO Fest 前哨(全傳說陣容)",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-06 18:00",
     end: "2026-07-06 19:00",
     highlights: [
@@ -285,49 +286,49 @@ const EVENTS = [
   },
   {
     title: "晚餐約會:焰白酋雷姆 等",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-07 18:00",
     end: "2026-07-07 19:00",
     highlights: ["焰白酋雷姆*、捷克羅姆*、奈克洛茲瑪(拂曉之翼)*"]
   },
   {
     title: "晚餐約會:闇黑酋雷姆 等",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-08 18:00",
     end: "2026-07-08 19:00",
     highlights: ["闇黑酋雷姆*、萊希拉姆*、奈克洛茲瑪(黃昏之鬃)*"]
   },
   {
     title: "晚餐約會:蒼響/藏瑪然特(王之姿)",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-09 18:00",
     end: "2026-07-09 19:00",
     highlights: ["蒼響(劍之王)*、藏瑪然特(盾之王)*"]
   },
   {
     title: "晚餐約會:原始/起源形態大集合",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-10 18:00",
     end: "2026-07-10 19:00",
     highlights: ["原始蓋歐卡、原始固拉多、帕路奇亞(起源形態)*、帝牙盧卡(起源形態)*"]
   },
   {
     title: "晚餐約會:蓋歐卡",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-15 18:00",
     end: "2026-07-15 19:00",
     highlights: ["蓋歐卡*"]
   },
   {
     title: "晚餐約會:索爾迦雷歐",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-22 18:00",
     end: "2026-07-22 19:00",
     highlights: ["索爾迦雷歐*"]
   },
   {
     title: "晚餐約會:酋雷姆",
-    type: "raid",
+    type: "dinner",
     start: "2026-07-29 18:00",
     end: "2026-07-29 19:00",
     highlights: ["酋雷姆*"]
