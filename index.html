@@ -211,6 +211,153 @@
     font-size: 0.95rem;
   }
 
+  /* ---------- Tabs (頂層分頁) ---------- */
+  .tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+  }
+  .tab {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    user-select: none;
+    transition: all .15s ease;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ---------- 飛人座標分頁 ---------- */
+  .spoof-intro {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 0.86rem;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+    line-height: 1.7;
+  }
+  .spoof-intro b { color: var(--text); }
+
+  .spoof-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .spoof-controls .label { font-size: 0.85rem; color: var(--text-dim); margin-right: 2px; }
+  .chip.preset.active { background: var(--accent-blue); color: #fff; border-color: transparent; font-weight: 700; }
+  .timebox {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
+  .timebox input[type="time"] {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px 6px;
+    font-size: 0.82rem;
+    font-family: inherit;
+  }
+  .window-note { font-size: 0.82rem; color: var(--accent); margin: 6px 0 14px; }
+
+  .spoof-table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+  table.spoof {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    background: var(--bg-card);
+  }
+  table.spoof th {
+    background: #15203400;
+    background: var(--bg);
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 12px;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+  }
+  table.spoof td { padding: 10px 12px; border-top: 1px solid var(--border); vertical-align: middle; }
+  table.spoof tr:hover td { background: var(--bg-card-hover); }
+  table.spoof tr.live td { background: rgba(52,211,153,.10); }
+
+  .tw-time { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+  .daytag {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background: rgba(96,165,250,.18);
+    color: var(--special);
+  }
+  .daytag.d0 { background: rgba(154,167,189,.15); color: var(--text-dim); }
+  .place .flag { font-size: 1.1rem; margin-right: 6px; }
+  .place .region { color: var(--text); }
+  .place .spot { color: var(--text-dim); font-size: 0.82rem; }
+  .live-badge {
+    font-size: 0.66rem; font-weight: 700; color: #0f1623;
+    background: var(--live); padding: 1px 6px; border-radius: 5px; margin-left: 6px;
+  }
+
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.82rem;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 6px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .12s ease;
+  }
+  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .copy-btn.copied { background: var(--live); color: #0f1623; border-color: transparent; }
+  .copy-btn .ico { opacity: .7; }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--live);
+    color: #0f1623;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .25s ease;
+    z-index: 50;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
   footer {
     text-align: center;
     color: var(--text-dim);
@@ -232,22 +379,65 @@
 </header>
 
 <div class="wrap">
-  <div class="controls">
-    <div class="filters" id="filters">
-      <span class="chip active" data-type="all">全部</span>
-      <span class="chip" data-type="community"><span class="dot"></span>社群日</span>
-      <span class="chip" data-type="raid"><span class="dot"></span>團體戰</span>
-      <span class="chip" data-type="dinner"><span class="dot"></span>晚餐約會</span>
-      <span class="chip" data-type="spotlight"><span class="dot"></span>聚焦時刻</span>
-      <span class="chip" data-type="special"><span class="dot"></span>季節/特殊</span>
-    </div>
-    <div class="views" id="views">
-      <span class="chip active" data-view="upcoming">即將到來 / 進行中</span>
-      <span class="chip" data-view="all">全部 (含已結束)</span>
-    </div>
+  <div class="tabs" id="tabs">
+    <span class="tab active" data-tab="calendar">📅 活動行事曆</span>
+    <span class="tab" data-tab="spoof">✈️ 全球花點座標</span>
   </div>
 
-  <div id="list"></div>
+  <!-- ===== 分頁一:活動行事曆 ===== -->
+  <div id="panel-calendar">
+    <div class="controls">
+      <div class="filters" id="filters">
+        <span class="chip active" data-type="all">全部</span>
+        <span class="chip" data-type="community"><span class="dot"></span>社群日</span>
+        <span class="chip" data-type="raid"><span class="dot"></span>團體戰</span>
+        <span class="chip" data-type="dinner"><span class="dot"></span>晚餐約會</span>
+        <span class="chip" data-type="spotlight"><span class="dot"></span>聚焦時刻</span>
+        <span class="chip" data-type="special"><span class="dot"></span>季節/特殊</span>
+      </div>
+      <div class="views" id="views">
+        <span class="chip active" data-view="upcoming">即將到來 / 進行中</span>
+        <span class="chip" data-view="all">全部 (含已結束)</span>
+      </div>
+    </div>
+
+    <div id="list"></div>
+  </div>
+
+  <!-- ===== 分頁二:全球花點座標(飛人) ===== -->
+  <div id="panel-spoof" style="display:none">
+    <div class="spoof-intro">
+      ✈️ <b>飛人環球跳點表</b>:選擇活動的<b>當地開始時間</b>,下表會把全球各時區熱門點換算成<b>台灣時間</b>並依序排好。
+      跟著時間往下走、<b>點座標即可複製</b>,就能一路環球延長同一場活動。
+    </div>
+
+    <div class="spoof-controls" id="spoofPresets">
+      <span class="label">當地活動時段:</span>
+      <span class="chip preset active" data-s="10:00" data-e="20:00">一般活動 10:00–20:00</span>
+      <span class="chip preset" data-s="14:00" data-e="17:00">社群日 14:00–17:00</span>
+      <span class="chip preset" data-s="18:00" data-e="19:00">聚焦/團戰 18:00–19:00</span>
+    </div>
+    <div class="spoof-controls">
+      <span class="timebox">自訂　開始 <input type="time" id="locStart" value="10:00"></span>
+      <span class="timebox">結束 <input type="time" id="locEnd" value="20:00"></span>
+      <label class="timebox"><input type="checkbox" id="liveNow"> 標示現在進行中(假設活動為今日)</label>
+    </div>
+    <div class="window-note" id="windowNote"></div>
+
+    <div class="spoof-table-wrap">
+      <table class="spoof" id="spoofTable">
+        <thead>
+          <tr>
+            <th>台灣開始</th>
+            <th>地點</th>
+            <th>座標(點擊複製)</th>
+            <th>台灣結束</th>
+          </tr>
+        </thead>
+        <tbody id="spoofBody"></tbody>
+      </table>
+    </div>
+  </div>
 
   <footer>
     資料由寶友手動維護 · 最後更新請見 events.js<br>
@@ -255,7 +445,10 @@
   </footer>
 </div>
 
+<div class="toast" id="toast">已複製!</div>
+
 <script src="events.js"></script>
+<script src="hotspots.js"></script>
 <script>
 (function () {
   const TYPE_LABEL = {
@@ -409,6 +602,142 @@
   render();
   setInterval(tickClock, 1000);
   setInterval(render, 60000); // 每分鐘更新倒數/狀態
+
+
+  /* ====================================================================
+   *  分頁二:全球花點座標(飛人)
+   * ==================================================================== */
+
+  const TW_OFFSET = 8; // 台灣 UTC+8
+  const $body = document.getElementById("spoofBody");
+  const $locStart = document.getElementById("locStart");
+  const $locEnd = document.getElementById("locEnd");
+  const $liveNow = document.getElementById("liveNow");
+  const $note = document.getElementById("windowNote");
+
+  function hm2min(s) {
+    const [h, m] = s.split(":").map(Number);
+    return h * 60 + (m || 0);
+  }
+  function min2hm(min) {
+    const m = ((min % 1440) + 1440) % 1440;
+    const pad = n => String(n).padStart(2, "0");
+    return `${pad(Math.floor(m / 60))}:${pad(m % 60)}`;
+  }
+
+  function renderSpoof() {
+    if (typeof HOTSPOTS === "undefined") return;
+    const ls = hm2min($locStart.value || "10:00");
+    let le = hm2min($locEnd.value || "20:00");
+    let dur = le - ls;
+    if (dur <= 0) dur += 1440; // 跨夜活動
+
+    // 換算台灣時間: 台灣 = 當地 - offset + 8
+    let rows = HOTSPOTS.map(h => {
+      const twStart = ls - h.offset * 60 + TW_OFFSET * 60;
+      return { h, twStart, twEnd: twStart + dur };
+    });
+    // 將最早者歸為「當日(第0天)」
+    const minStart = Math.min(...rows.map(r => r.twStart));
+    const base = Math.floor(minStart / 1440) * 1440;
+    rows.forEach(r => { r.twStart -= base; r.twEnd -= base; });
+    rows.sort((a, b) => a.twStart - b.twStart);
+
+    // 現在進行中(假設活動為今日台灣時間)
+    const now = new Date();
+    const nowMin = now.getHours() * 60 + now.getMinutes();
+    function isLive(r) {
+      if (!$liveNow.checked) return false;
+      // 比對今日與「昨日活動延伸到今日」兩種情況
+      return (nowMin >= r.twStart && nowMin <= r.twEnd) ||
+             (nowMin + 1440 >= r.twStart && nowMin + 1440 <= r.twEnd);
+    }
+
+    const dayTag = d => {
+      if (d <= 0) return '<span class="daytag d0">當日</span>';
+      return `<span class="daytag">+${d}天</span>`;
+    };
+
+    $body.innerHTML = rows.map(r => {
+      const sDay = Math.floor(r.twStart / 1440);
+      const eDay = Math.floor(r.twEnd / 1440);
+      const live = isLive(r);
+      return `
+        <tr class="${live ? "live" : ""}">
+          <td><span class="tw-time">${min2hm(r.twStart)}</span>${dayTag(sDay)}</td>
+          <td class="place">
+            <span class="flag">${r.h.flag}</span><span class="region">${esc(r.h.region)}</span>
+            ${live ? '<span class="live-badge">進行中</span>' : ''}
+            <div class="spot">${esc(r.h.spot)}</div>
+          </td>
+          <td><button class="copy-btn" data-coord="${esc(r.h.coord)}"><span class="ico">📋</span>${esc(r.h.coord)}</button></td>
+          <td><span class="tw-time">${min2hm(r.twEnd)}</span>${dayTag(eDay)}</td>
+        </tr>`;
+    }).join("");
+
+    $note.textContent = `目前換算:當地 ${$locStart.value}–${$locEnd.value}(每地 ${(dur / 60).toFixed(dur % 60 ? 1 : 0)} 小時)→ 下表為台灣時間,共 ${rows.length} 個跳點`;
+  }
+
+  // 複製座標
+  function showToast(msg) {
+    const t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => t.classList.remove("show"), 1500);
+  }
+  document.getElementById("spoofTable").addEventListener("click", e => {
+    const btn = e.target.closest(".copy-btn");
+    if (!btn) return;
+    const coord = btn.dataset.coord;
+    const done = () => {
+      btn.classList.add("copied");
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<span class="ico">✅</span>已複製';
+      showToast("座標已複製:" + coord);
+      setTimeout(() => { btn.classList.remove("copied"); btn.innerHTML = orig; }, 1200);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(coord).then(done).catch(() => fallbackCopy(coord, done));
+    } else {
+      fallbackCopy(coord, done);
+    }
+  });
+  function fallbackCopy(text, cb) {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); cb(); } catch (e) { showToast("複製失敗,請手動選取"); }
+    document.body.removeChild(ta);
+  }
+
+  // 預設時段按鈕
+  document.getElementById("spoofPresets").addEventListener("click", e => {
+    const chip = e.target.closest(".preset");
+    if (!chip) return;
+    document.querySelectorAll("#spoofPresets .preset").forEach(c => c.classList.toggle("active", c === chip));
+    $locStart.value = chip.dataset.s;
+    $locEnd.value = chip.dataset.e;
+    renderSpoof();
+  });
+  [$locStart, $locEnd, $liveNow].forEach(el => el.addEventListener("input", () => {
+    document.querySelectorAll("#spoofPresets .preset").forEach(c => c.classList.remove("active"));
+    renderSpoof();
+  }));
+
+  // 分頁切換
+  document.getElementById("tabs").addEventListener("click", e => {
+    const tab = e.target.closest(".tab");
+    if (!tab) return;
+    document.querySelectorAll("#tabs .tab").forEach(t => t.classList.toggle("active", t === tab));
+    const isCal = tab.dataset.tab === "calendar";
+    document.getElementById("panel-calendar").style.display = isCal ? "" : "none";
+    document.getElementById("panel-spoof").style.display = isCal ? "none" : "";
+    if (!isCal) renderSpoof();
+  });
+
+  renderSpoof();
+  setInterval(renderSpoof, 60000); // 每分鐘更新「進行中」標示
 })();
 </script>
 </body>
