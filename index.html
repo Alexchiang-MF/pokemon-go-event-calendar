@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon GO 活動行事曆總覽</title>
+<meta name="description" content="Pokémon GO 活動行事曆總覽 — 社群日、團體戰、聚焦時刻、季節特殊活動,不再錯過任何一場。">
+<style>
+  :root {
+    --bg: #0f1623;
+    --bg-card: #1a2436;
+    --bg-card-hover: #212d44;
+    --text: #e8edf5;
+    --text-dim: #9aa7bd;
+    --border: #2a3650;
+    --accent: #ffcb05;        /* 寶可夢黃 */
+    --accent-blue: #2a75bb;   /* 寶可夢藍 */
+    --community: #4ade80;     /* 社群日 綠 */
+    --raid: #f87171;          /* 團體戰 紅 */
+    --spotlight: #c084fc;     /* 聚焦時刻 紫 */
+    --special: #60a5fa;       /* 季節/特殊 藍 */
+    --live: #34d399;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 60px;
+  }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+  /* ---------- Header ---------- */
+  header {
+    background: linear-gradient(135deg, #2a75bb 0%, #1a4d80 100%);
+    border-bottom: 4px solid var(--accent);
+    padding: 28px 0 24px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  header .ball { font-size: 1.6rem; }
+  header p { color: #cfe0f5; font-size: 0.9rem; margin-top: 6px; }
+  .clock {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #bcd4ee;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- Controls ---------- */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .filters, .views { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .chip {
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-dim);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all .15s ease;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .chip:hover { background: var(--bg-card-hover); color: var(--text); }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .chip[data-type="community"] .dot { background: var(--community); }
+  .chip[data-type="raid"]      .dot { background: var(--raid); }
+  .chip[data-type="spotlight"] .dot { background: var(--spotlight); }
+  .chip[data-type="special"]   .dot { background: var(--special); }
+
+  .chip.active { color: #0f1623; font-weight: 700; border-color: transparent; }
+  .chip[data-type="all"].active       { background: var(--accent); }
+  .chip[data-type="community"].active { background: var(--community); }
+  .chip[data-type="raid"].active      { background: var(--raid); }
+  .chip[data-type="spotlight"].active { background: var(--spotlight); }
+  .chip[data-type="special"].active   { background: var(--special); }
+  .chip[data-view].active             { background: var(--accent-blue); color: #fff; font-weight: 700; border-color: transparent; }
+
+  .views { font-size: 0.8rem; }
+
+  /* ---------- Event cards ---------- */
+  .group-label {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 22px 0 10px;
+    padding-left: 4px;
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    transition: all .15s ease;
+    position: relative;
+  }
+  .card:hover { background: var(--bg-card-hover); transform: translateY(-1px); }
+  .card[data-type="community"] { border-left-color: var(--community); }
+  .card[data-type="raid"]      { border-left-color: var(--raid); }
+  .card[data-type="spotlight"] { border-left-color: var(--spotlight); }
+  .card[data-type="special"]   { border-left-color: var(--special); }
+  .card.past { opacity: 0.5; }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card-title { font-size: 1.1rem; font-weight: 700; }
+  .badge {
+    font-size: 0.7rem;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #0f1623;
+  }
+  .badge[data-type="community"] { background: var(--community); }
+  .badge[data-type="raid"]      { background: var(--raid); }
+  .badge[data-type="spotlight"] { background: var(--spotlight); }
+  .badge[data-type="special"]   { background: var(--special); }
+
+  .card-time {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    margin-top: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-top: 8px;
+    padding: 3px 10px;
+    border-radius: 6px;
+  }
+  .status.live   { background: rgba(52,211,153,.15); color: var(--live); }
+  .status.soon   { background: rgba(255,203,5,.15);  color: var(--accent); }
+  .status.future { background: rgba(154,167,189,.12); color: var(--text-dim); }
+  .status.past   { background: rgba(154,167,189,.1);  color: var(--text-dim); }
+  .status .pulse {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--live);
+    animation: pulse 1.4s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(52,211,153,.6); }
+    70% { box-shadow: 0 0 0 7px rgba(52,211,153,0); }
+    100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); }
+  }
+
+  ul.highlights { list-style: none; margin-top: 12px; }
+  ul.highlights li {
+    font-size: 0.9rem;
+    color: var(--text);
+    padding: 3px 0 3px 20px;
+    position: relative;
+  }
+  ul.highlights li::before {
+    content: "▸";
+    position: absolute;
+    left: 2px;
+    color: var(--accent);
+  }
+  .note {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+
+  .empty {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 48px 0;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1><span class="ball">⚪</span> Pokémon GO 活動行事曆總覽</h1>
+    <p>社群日 · 團體戰 · 聚焦時刻 · 季節特殊活動 — 一頁掌握,不錯過任何一場</p>
+    <div class="clock" id="clock"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="filters" id="filters">
+      <span class="chip active" data-type="all">全部</span>
+      <span class="chip" data-type="community"><span class="dot"></span>社群日</span>
+      <span class="chip" data-type="raid"><span class="dot"></span>團體戰</span>
+      <span class="chip" data-type="spotlight"><span class="dot"></span>聚焦時刻</span>
+      <span class="chip" data-type="special"><span class="dot"></span>季節/特殊</span>
+    </div>
+    <div class="views" id="views">
+      <span class="chip active" data-view="upcoming">即將到來 / 進行中</span>
+      <span class="chip" data-view="all">全部 (含已結束)</span>
+    </div>
+  </div>
+
+  <div id="list"></div>
+
+  <footer>
+    資料由寶友手動維護 · 最後更新請見 events.js<br>
+    時間以台灣時間 (UTC+8) 為準
+  </footer>
+</div>
+
+<script src="events.js"></script>
+<script>
+(function () {
+  const TYPE_LABEL = {
+    community: "社群日",
+    raid: "團體戰",
+    spotlight: "聚焦時刻",
+    special: "季節/特殊"
+  };
+
+  let activeType = "all";
+  let activeView = "upcoming";
+
+  function parse(s) {
+    // "YYYY-MM-DD HH:mm" -> Date (本地時區)
+    const [d, t] = s.trim().split(/\s+/);
+    const [y, mo, day] = d.split("-").map(Number);
+    const [h, mi] = (t || "00:00").split(":").map(Number);
+    return new Date(y, mo - 1, day, h, mi);
+  }
+
+  function fmtRange(start, end) {
+    const sameDay = start.toDateString() === end.toDateString();
+    const wd = ["日", "一", "二", "三", "四", "五", "六"];
+    const pad = n => String(n).padStart(2, "0");
+    const dpart = dt => `${dt.getMonth() + 1}/${dt.getDate()}(${wd[dt.getDay()]})`;
+    const tpart = dt => `${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+    if (sameDay) {
+      return `${dpart(start)} ${tpart(start)} – ${tpart(end)}`;
+    }
+    return `${dpart(start)} ${tpart(start)} → ${dpart(end)} ${tpart(end)}`;
+  }
+
+  function countdown(ms) {
+    const m = Math.floor(ms / 60000);
+    const d = Math.floor(m / 1440);
+    const h = Math.floor((m % 1440) / 60);
+    const mm = m % 60;
+    if (d > 0) return `${d} 天 ${h} 小時後`;
+    if (h > 0) return `${h} 小時 ${mm} 分後`;
+    return `${mm} 分鐘後`;
+  }
+
+  function statusOf(start, end, now) {
+    if (now < start) {
+      const diff = start - now;
+      if (diff <= 24 * 3600 * 1000) return { cls: "soon", text: "即將開始 · " + countdown(diff) };
+      return { cls: "future", text: countdown(diff) + "開始" };
+    }
+    if (now >= start && now <= end) {
+      const diff = end - now;
+      return { cls: "live", text: "進行中 · 還剩 " + countdown(diff).replace("後", ""), live: true };
+    }
+    return { cls: "past", text: "已結束" };
+  }
+
+  function buildCard(ev, now) {
+    const start = parse(ev.start), end = parse(ev.end);
+    const st = statusOf(start, end, now);
+    const isPast = st.cls === "past";
+
+    const card = document.createElement("div");
+    card.className = "card" + (isPast ? " past" : "");
+    card.dataset.type = ev.type;
+
+    const hl = (ev.highlights || []).map(h => `<li>${esc(h)}</li>`).join("");
+    const note = ev.note ? `<div class="note">📝 ${esc(ev.note)}</div>` : "";
+
+    card.innerHTML = `
+      <div class="card-head">
+        <div class="card-title">${esc(ev.title)}</div>
+        <span class="badge" data-type="${ev.type}">${TYPE_LABEL[ev.type] || ev.type}</span>
+      </div>
+      <div class="card-time">🗓️ ${fmtRange(start, end)}</div>
+      <div class="status ${st.cls}">${st.live ? '<span class="pulse"></span>' : ''}${esc(st.text)}</div>
+      ${hl ? `<ul class="highlights">${hl}</ul>` : ""}
+      ${note}
+    `;
+    return card;
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => (
+      { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+    ));
+  }
+
+  function render() {
+    const now = new Date();
+    const list = document.getElementById("list");
+    list.innerHTML = "";
+
+    let items = (typeof EVENTS !== "undefined" ? EVENTS : []).map(ev => ({
+      ev, start: parse(ev.start), end: parse(ev.end)
+    }));
+
+    if (activeType !== "all") items = items.filter(x => x.ev.type === activeType);
+    if (activeView === "upcoming") items = items.filter(x => x.end >= now);
+
+    // 進行中與未來: 依開始時間升冪; 已結束: 依結束時間降冪 排最後
+    const active = items.filter(x => x.end >= now).sort((a, b) => a.start - b.start);
+    const past = items.filter(x => x.end < now).sort((a, b) => b.end - a.end);
+
+    if (active.length === 0 && past.length === 0) {
+      list.innerHTML = `<div class="empty">這個篩選條件下沒有活動 🔍<br>試試切換類型,或在 events.js 加入活動。</div>`;
+      return;
+    }
+
+    if (active.length) {
+      const lbl = document.createElement("div");
+      lbl.className = "group-label";
+      lbl.textContent = "進行中 & 即將到來";
+      list.appendChild(lbl);
+      active.forEach(x => list.appendChild(buildCard(x.ev, now)));
+    }
+    if (past.length) {
+      const lbl = document.createElement("div");
+      lbl.className = "group-label";
+      lbl.textContent = "已結束";
+      list.appendChild(lbl);
+      past.forEach(x => list.appendChild(buildCard(x.ev, now)));
+    }
+  }
+
+  // ---- 控制列事件 ----
+  document.getElementById("filters").addEventListener("click", e => {
+    const chip = e.target.closest(".chip");
+    if (!chip) return;
+    activeType = chip.dataset.type;
+    document.querySelectorAll("#filters .chip").forEach(c => c.classList.toggle("active", c === chip));
+    render();
+  });
+  document.getElementById("views").addEventListener("click", e => {
+    const chip = e.target.closest(".chip");
+    if (!chip) return;
+    activeView = chip.dataset.view;
+    document.querySelectorAll("#views .chip").forEach(c => c.classList.toggle("active", c === chip));
+    render();
+  });
+
+  // ---- 時鐘 ----
+  function tickClock() {
+    const now = new Date();
+    const wd = ["日", "一", "二", "三", "四", "五", "六"];
+    const pad = n => String(n).padStart(2, "0");
+    document.getElementById("clock").textContent =
+      `🕒 現在時間 ${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()} (週${wd[now.getDay()]}) ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+  }
+
+  tickClock();
+  render();
+  setInterval(tickClock, 1000);
+  setInterval(render, 60000); // 每分鐘更新倒數/狀態
+})();
+</script>
+</body>
+</html>
