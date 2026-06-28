@@ -1,0 +1,1121 @@
+﻿圖鑑編號,名稱(speciesId),名稱,L20_滿IV_CP,L25_滿IV_CP
+1,bulbasaur,Bulbasaur,637,796
+2,ivysaur,Ivysaur,970,1213
+3,venusaur,Venusaur,1554,1943
+3,venusaur_mega,Venusaur (Mega),2113,2641
+4,charmander,Charmander,560,700
+5,charmeleon,Charmeleon,944,1180
+6,charizard,Charizard,1651,2064
+6,charizard_mega_x,Charizard (Mega X),2200,2750
+6,charizard_mega_y,Charizard (Mega Y),2546,3182
+7,squirtle,Squirtle,540,675
+8,wartortle,Wartortle,850,1063
+9,blastoise,Blastoise,1409,1761
+9,blastoise_mega,Blastoise (Mega),2252,2815
+10,caterpie,Caterpie,249,312
+11,metapod,Metapod,257,321
+12,butterfree,Butterfree,1044,1305
+13,weedle,Weedle,260,325
+14,kakuna,Kakuna,246,308
+15,beedrill,Beedrill,1054,1318
+15,beedrill_mega,Beedrill (Mega),1933,2416
+16,pidgey,Pidgey,388,486
+17,pidgeotto,Pidgeotto,682,853
+18,pidgeot,Pidgeot,1216,1521
+18,pidgeot_mega,Pidgeot (Mega),2102,2628
+19,rattata,Rattata,419,524
+19,rattata_alolan,Rattata (Alolan),419,524
+20,raticate,Raticate,989,1236
+20,raticate_alolan,Raticate (Alolan),974,1217
+21,spearow,Spearow,456,570
+22,fearow,Fearow,1141,1426
+23,ekans,Ekans,529,662
+24,arbok,Arbok,1097,1372
+25,pikachu,Pikachu,536,670
+25,pikachu_5th_anniversary,Pikachu (5th Anniversary),536,670
+25,pikachu_flying,Pikachu (Flying),536,670
+25,pikachu_horizons,Pikachu (Horizons),536,670
+25,pikachu_kariyushi,Pikachu (Kariyushi),536,670
+25,pikachu_libre,Pikachu (Libre),536,670
+25,pikachu_pop_star,Pikachu (Pop Star),536,670
+25,pikachu_rock_star,Pikachu (Rock Star),536,670
+25,pikachu_shaymin,Pikachu (Shaymin Scarf),536,670
+26,raichu,Raichu,1247,1558
+26,raichu_alolan,Raichu (Alolan),1306,1633
+27,sandshrew,Sandshrew,720,901
+27,sandshrew_alolan,Sandshrew (Alolan),739,924
+28,sandslash,Sandslash,1356,1696
+28,sandslash_alolan,Sandslash (Alolan),1390,1737
+29,nidoran_female,Nidoran Female,466,583
+30,nidorina,Nidorina,748,935
+31,nidoqueen,Nidoqueen,1421,1777
+32,nidoran_male,Nidoran Male,491,614
+33,nidorino,Nidorino,796,995
+34,nidoking,Nidoking,1466,1833
+35,clefairy,Clefairy,660,825
+36,clefable,Clefable,1392,1741
+37,vulpix,Vulpix,504,631
+37,vulpix_alolan,Vulpix (Alolan),504,631
+38,ninetales,Ninetales,1302,1628
+38,ninetales_alolan,Ninetales (Alolan),1319,1649
+39,jigglypuff,Jigglypuff,413,517
+40,wigglytuff,Wigglytuff,1101,1376
+41,zubat,Zubat,381,476
+42,golbat,Golbat,1129,1412
+43,oddish,Oddish,702,877
+44,gloom,Gloom,960,1200
+45,vileplume,Vileplume,1462,1828
+46,paras,Paras,581,727
+47,parasect,Parasect,1062,1328
+48,venonat,Venonat,573,717
+49,venomoth,Venomoth,1190,1487
+50,diglett,Diglett,386,483
+50,diglett_alolan,Diglett (Alolan),389,486
+51,dugtrio,Dugtrio,895,1119
+51,dugtrio_alolan,Dugtrio (Alolan),1084,1355
+52,meowth,Meowth,427,534
+52,meowth_alolan,Meowth (Alolan),455,569
+52,meowth_galarian,Meowth (Galarian),591,739
+53,persian,Persian,965,1206
+53,persian_alolan,Persian (Alolan),1012,1265
+54,psyduck,Psyduck,632,790
+55,golduck,Golduck,1400,1750
+56,mankey,Mankey,665,832
+57,primeape,Primeape,1307,1634
+58,growlithe,Growlithe,710,888
+58,growlithe_hisuian,Growlithe (Hisuian),755,944
+59,arcanine,Arcanine,1731,2164
+59,arcanine_hisuian,Arcanine (Hisuian),1797,2247
+60,poliwag,Poliwag,473,592
+61,poliwhirl,Poliwhirl,811,1013
+62,poliwrath,Poliwrath,1477,1847
+63,abra,Abra,767,958
+64,kadabra,Kadabra,1176,1471
+65,alakazam,Alakazam,1747,2184
+65,alakazam_mega,Alakazam (Mega),2577,3221
+66,machop,Machop,730,913
+67,machoke,Machoke,1160,1451
+68,machamp,Machamp,1746,2183
+69,bellsprout,Bellsprout,590,738
+70,weepinbell,Weepinbell,921,1151
+71,victreebel,Victreebel,1389,1736
+71,victreebel_mega,Victreebel (Mega),2003,2503
+72,tentacool,Tentacool,594,743
+73,tentacruel,Tentacruel,1384,1730
+74,geodude,Geodude,739,923
+74,geodude_alolan,Geodude (Alolan),739,923
+75,graveler,Graveler,1084,1355
+75,graveler_alolan,Graveler (Alolan),1084,1355
+76,golem,Golem,1685,2106
+76,golem_alolan,Golem (Alolan),1685,2106
+77,ponyta,Ponyta,969,1212
+77,ponyta_galarian,Ponyta (Galarian),969,1212
+78,rapidash,Rapidash,1406,1757
+78,rapidash_galarian,Rapidash (Galarian),1406,1757
+79,slowpoke,Slowpoke,700,876
+79,slowpoke_galarian,Slowpoke (Galarian),700,876
+80,slowbro,Slowbro,1454,1817
+80,slowbro_galarian,Slowbro (Galarian),1397,1746
+80,slowbro_mega,Slowbro (Mega),2145,2682
+81,magnemite,Magnemite,778,973
+82,magneton,Magneton,1420,1775
+83,farfetchd,Farfetch'd,706,883
+83,farfetchd_galarian,Farfetch'd (Galarian),956,1196
+84,doduo,Doduo,686,857
+85,dodrio,Dodrio,1349,1687
+86,seel,Seel,555,694
+87,dewgong,Dewgong,1134,1418
+88,grimer,Grimer,785,981
+88,grimer_alolan,Grimer (Alolan),785,981
+89,muk,Muk,1575,1969
+89,muk_alolan,Muk (Alolan),1575,1969
+90,shellder,Shellder,617,771
+91,cloyster,Cloyster,1455,1819
+92,gastly,Gastly,702,878
+93,haunter,Haunter,1121,1402
+94,gengar,Gengar,1644,2055
+94,gengar_mega,Gengar (Mega),2477,3097
+95,onix,Onix,629,787
+96,drowzee,Drowzee,594,743
+97,hypno,Hypno,1194,1493
+98,krabby,Krabby,892,1115
+99,kingler,Kingler,1616,2020
+100,voltorb,Voltorb,577,721
+100,voltorb_hisuian,Voltorb (Hisuian),577,721
+101,electrode,Electrode,1199,1499
+101,electrode_hisuian,Electrode (Hisuian),1228,1535
+102,exeggcute,Exeggcute,671,839
+103,exeggutor,Exeggutor,1722,2153
+103,exeggutor_alolan,Exeggutor (Alolan),1722,2153
+104,cubone,Cubone,582,728
+105,marowak,Marowak,1048,1311
+105,marowak_alolan,Marowak (Alolan),1048,1311
+106,hitmonlee,Hitmonlee,1472,1840
+107,hitmonchan,Hitmonchan,1332,1665
+108,lickitung,Lickitung,806,1008
+109,koffing,Koffing,694,867
+110,weezing,Weezing,1310,1637
+110,weezing_galarian,Weezing (Galarian),1310,1637
+111,rhyhorn,Rhyhorn,943,1179
+112,rhydon,Rhydon,1816,2270
+113,chansey,Chansey,717,896
+114,tangela,Tangela,1278,1598
+115,kangaskhan,Kangaskhan,1477,1847
+115,kangaskhan_mega,Kangaskhan (Mega),2200,2750
+116,horsea,Horsea,603,754
+117,seadra,Seadra,1196,1495
+118,goldeen,Goldeen,658,823
+119,seaking,Seaking,1235,1544
+120,staryu,Staryu,661,826
+121,starmie,Starmie,1476,1846
+122,mr_mime,Mr. Mime,1273,1591
+122,mr_mime_galarian,Mr. Mime (Galarian),1181,1477
+123,scyther,Scyther,1546,1933
+124,jynx,Jynx,1460,1825
+125,electabuzz,Electabuzz,1333,1667
+126,magmar,Magmar,1367,1710
+127,pinsir,Pinsir,1690,2113
+127,pinsir_mega,Pinsir (Mega),2389,2987
+128,tauros,Tauros,1497,1872
+128,tauros_aqua,Tauros (Aqua),1621,2026
+128,tauros_blaze,Tauros (Blaze),1621,2026
+128,tauros_combat,Tauros (Combat),1621,2026
+129,magikarp,Magikarp,157,196
+130,gyarados,Gyarados,1937,2422
+130,gyarados_mega,Gyarados (Mega),2695,3369
+131,lapras,Lapras,1509,1886
+133,eevee,Eevee,612,765
+134,vaporeon,Vaporeon,1779,2225
+135,jolteon,Jolteon,1650,2063
+136,flareon,Flareon,1730,2163
+137,porygon,Porygon,982,1228
+138,omanyte,Omanyte,882,1103
+139,omastar,Omastar,1592,1990
+140,kabuto,Kabuto,783,979
+141,kabutops,Kabutops,1550,1938
+142,aerodactyl,Aerodactyl,1590,1988
+142,aerodactyl_mega,Aerodactyl (Mega),2353,2941
+143,snorlax,Snorlax,1843,2304
+144,articuno,Articuno,1743,2179
+144,articuno_galarian,Articuno (Galarian),2051,2564
+145,zapdos,Zapdos,2015,2519
+145,zapdos_galarian,Zapdos (Galarian),2027,2534
+146,moltres,Moltres,1980,2475
+146,moltres_galarian,Moltres (Galarian),1809,2262
+147,dratini,Dratini,574,717
+148,dragonair,Dragonair,1017,1271
+149,dragonite,Dragonite,2167,2709
+149,dragonite_mega,Dragonite (Mega),2755,3445
+150,mewtwo,Mewtwo,2387,2984
+150,mewtwo_armored,Mewtwo (Armored),1821,2276
+150,mewtwo_mega_x,Mewtwo (Mega X),3492,4366
+150,mewtwo_mega_y,Mewtwo (Mega Y),3673,4592
+151,mew,Mew,1865,2332
+152,chikorita,Chikorita,534,668
+153,bayleef,Bayleef,831,1039
+154,meganium,Meganium,1377,1721
+155,cyndaquil,Cyndaquil,560,700
+156,quilava,Quilava,944,1180
+157,typhlosion,Typhlosion,1651,2064
+157,typhlosion_hisuian,Typhlosion (Hisuian),1710,2138
+158,totodile,Totodile,646,808
+159,croconaw,Croconaw,984,1230
+160,feraligatr,Feraligatr,1632,2040
+161,sentret,Sentret,353,441
+162,furret,Furret,1004,1255
+163,hoothoot,Hoothoot,387,484
+164,noctowl,Noctowl,1156,1446
+165,ledyba,Ledyba,416,520
+166,ledian,Ledian,769,961
+167,spinarak,Spinarak,466,583
+168,ariados,Ariados,1012,1265
+169,crobat,Crobat,1512,1890
+170,chinchou,Chinchou,639,799
+171,lanturn,Lanturn,1191,1489
+172,pichu,Pichu,270,338
+173,cleffa,Cleffa,383,479
+174,igglybuff,Igglybuff,306,382
+175,togepi,Togepi,375,470
+176,togetic,Togetic,976,1220
+177,natu,Natu,630,787
+178,xatu,Xatu,1250,1563
+179,mareep,Mareep,566,708
+180,flaaffy,Flaaffy,869,1086
+181,ampharos,Ampharos,1630,2037
+181,ampharos_mega,Ampharos (Mega),2426,3032
+182,bellossom,Bellossom,1303,1629
+183,marill,Marill,263,329
+184,azumarill,Azumarill,907,1134
+185,sudowoodo,Sudowoodo,1227,1534
+186,politoed,Politoed,1399,1749
+187,hoppip,Hoppip,342,428
+188,skiploom,Skiploom,557,697
+189,jumpluff,Jumpluff,935,1168
+190,aipom,Aipom,770,963
+191,sunkern,Sunkern,226,282
+192,sunflora,Sunflora,1223,1529
+193,yanma,Yanma,840,1050
+194,wooper,Wooper,366,458
+194,wooper_paldean,Wooper (Paldean),366,458
+195,quagsire,Quagsire,1138,1423
+196,espeon,Espeon,1811,2264
+197,umbreon,Umbreon,1221,1526
+198,murkrow,Murkrow,892,1116
+199,slowking,Slowking,1454,1817
+199,slowking_galarian,Slowking (Galarian),1552,1941
+200,misdreavus,Misdreavus,1100,1376
+201,unown,Unown,677,846
+202,wobbuffet,Wobbuffet,586,733
+203,girafarig,Girafarig,1169,1462
+204,pineco,Pineco,633,791
+205,forretress,Forretress,1304,1630
+206,dunsparce,Dunsparce,965,1206
+207,gligar,Gligar,1061,1326
+208,steelix,Steelix,1379,1724
+208,steelix_mega,Steelix (Mega),2097,2622
+209,snubbull,Snubbull,707,884
+210,granbull,Granbull,1458,1823
+211,qwilfish,Qwilfish,1172,1465
+211,qwilfish_hisuian,Qwilfish (Hisuian),1220,1526
+212,scizor,Scizor,1714,2143
+212,scizor_mega,Scizor (Mega),2335,2919
+213,shuckle,Shuckle,231,289
+214,heracross,Heracross,1772,2215
+214,heracross_mega,Heracross (Mega),2751,3439
+215,sneasel,Sneasel,1172,1465
+215,sneasel_hisuian,Sneasel (Hisuian),1172,1465
+216,teddiursa,Teddiursa,759,949
+217,ursaring,Ursaring,1682,2103
+218,slugma,Slugma,511,639
+219,magcargo,Magcargo,972,1215
+220,swinub,Swinub,423,529
+221,piloswine,Piloswine,1340,1675
+222,corsola,Corsola,787,984
+222,corsola_galarian,Corsola (Galarian),855,1069
+223,remoraid,Remoraid,521,651
+224,octillery,Octillery,1322,1653
+225,delibird,Delibird,625,781
+226,mantine,Mantine,1204,1506
+227,skarmory,Skarmory,1204,1506
+227,skarmory_mega,Skarmory (Mega),2137,2672
+228,houndour,Houndour,705,881
+229,houndoom,Houndoom,1505,1882
+229,houndoom_mega,Houndoom (Mega),2195,2744
+230,kingdra,Kingdra,1509,1887
+231,phanpy,Phanpy,689,862
+232,donphan,Donphan,1722,2152
+233,porygon2,Porygon2,1549,1936
+234,stantler,Stantler,1236,1546
+235,smeargle,Smeargle,246,308
+236,tyrogue,Tyrogue,281,351
+237,hitmontop,Hitmontop,1232,1540
+238,smoochum,Smoochum,738,922
+239,elekid,Elekid,689,861
+240,magby,Magby,756,945
+241,miltank,Miltank,1345,1682
+242,blissey,Blissey,1575,1969
+243,raikou,Raikou,1972,2466
+244,entei,Entei,1984,2480
+245,suicune,Suicune,1704,2130
+246,larvitar,Larvitar,594,743
+247,pupitar,Pupitar,1009,1261
+248,tyranitar,Tyranitar,2191,2739
+248,tyranitar_mega,Tyranitar (Mega),3055,3820
+249,lugia,Lugia,2115,2645
+250,ho_oh,Ho-Oh,2207,2759
+251,celebi,Celebi,1865,2332
+252,treecko,Treecko,601,752
+253,grovyle,Grovyle,956,1195
+254,sceptile,Sceptile,1575,1969
+254,sceptile_mega,Sceptile (Mega),2317,2897
+255,torchic,Torchic,624,781
+256,combusken,Combusken,944,1180
+257,blaziken,Blaziken,1627,2034
+257,blaziken_mega,Blaziken (Mega),2377,2972
+258,mudkip,Mudkip,644,805
+259,marshtomp,Marshtomp,1015,1269
+260,swampert,Swampert,1699,2124
+260,swampert_mega,Swampert (Mega),2514,3143
+261,poochyena,Poochyena,387,484
+262,mightyena,Mightyena,1100,1375
+263,zigzagoon,Zigzagoon,290,363
+263,zigzagoon_galarian,Zigzagoon (Galarian),290,363
+264,linoone,Linoone,949,1187
+264,linoone_galarian,Linoone (Galarian),949,1187
+265,wurmple,Wurmple,330,413
+266,silcoon,Silcoon,316,395
+267,beautifly,Beautifly,1009,1261
+268,cascoon,Cascoon,316,395
+269,dustox,Dustox,699,874
+270,lotad,Lotad,342,427
+271,lombre,Lombre,684,855
+272,ludicolo,Ludicolo,1327,1659
+273,seedot,Seedot,342,427
+274,nuzleaf,Nuzleaf,701,876
+275,shiftry,Shiftry,1333,1666
+276,taillow,Taillow,437,546
+277,swellow,Swellow,1097,1371
+278,wingull,Wingull,437,546
+279,pelipper,Pelipper,1215,1519
+280,ralts,Ralts,308,385
+281,kirlia,Kirlia,552,690
+282,gardevoir,Gardevoir,1767,2209
+282,gardevoir_mega,Gardevoir (Mega),2578,3223
+283,surskit,Surskit,452,565
+284,masquerain,Masquerain,1297,1622
+285,shroomish,Shroomish,463,578
+286,breloom,Breloom,1502,1877
+287,slakoth,Slakoth,572,716
+288,vigoroth,Vigoroth,1124,1405
+289,slaking,Slaking,2532,3165
+290,nincada,Nincada,439,549
+291,ninjask,Ninjask,1125,1406
+293,whismur,Whismur,383,479
+294,loudred,Loudred,758,948
+295,exploud,Exploud,1341,1677
+296,makuhita,Makuhita,467,583
+297,hariyama,Hariyama,1616,2020
+298,azurill,Azurill,208,260
+299,nosepass,Nosepass,567,709
+300,skitty,Skitty,422,527
+301,delcatty,Delcatty,854,1068
+302,sableye,Sableye,843,1054
+302,sableye_mega,Sableye (Mega),1110,1387
+303,mawile,Mawile,934,1167
+303,mawile_mega,Mawile (Mega),1360,1700
+304,aron,Aron,747,934
+305,lairon,Lairon,1174,1468
+306,aggron,Aggron,1714,2143
+306,aggron_mega,Aggron (Mega),2378,2973
+307,meditite,Meditite,396,495
+308,medicham,Medicham,817,1022
+308,medicham_mega,Medicham (Mega),1425,1782
+309,electrike,Electrike,551,689
+310,manectric,Manectric,1337,1672
+310,manectric_mega,Manectric (Mega),2046,2557
+311,plusle,Plusle,1016,1270
+312,minun,Minun,968,1210
+313,volbeat,Volbeat,1012,1265
+314,illumise,Illumise,1012,1265
+315,roselia,Roselia,1068,1335
+316,gulpin,Gulpin,495,618
+317,swalot,Swalot,1130,1413
+318,carvanha,Carvanha,583,729
+319,sharpedo,Sharpedo,1246,1558
+319,sharpedo_mega,Sharpedo (Mega),1870,2338
+320,wailmer,Wailmer,838,1048
+321,wailord,Wailord,1302,1628
+322,numel,Numel,604,755
+323,camerupt,Camerupt,1253,1566
+324,torkoal,Torkoal,1196,1495
+325,spoink,Spoink,762,953
+326,grumpig,Grumpig,1354,1692
+327,spinda,Spinda,697,872
+328,trapinch,Trapinch,728,910
+329,vibrava,Vibrava,699,875
+330,flygon,Flygon,1520,1901
+331,cacnea,Cacnea,709,887
+332,cacturne,Cacturne,1313,1641
+333,swablu,Swablu,470,588
+334,altaria,Altaria,1145,1432
+334,altaria_mega,Altaria (Mega),1807,2259
+335,zangoose,Zangoose,1381,1727
+336,seviper,Seviper,1203,1504
+337,lunatone,Lunatone,1330,1662
+338,solrock,Solrock,1330,1662
+339,barboach,Barboach,468,585
+340,whiscash,Whiscash,1186,1482
+341,corphish,Corphish,703,879
+342,crawdaunt,Crawdaunt,1413,1767
+343,baltoy,Baltoy,449,562
+344,claydol,Claydol,1126,1408
+345,lileep,Lileep,738,922
+346,cradily,Cradily,1263,1579
+346,cradily_b,Cradily,1263,1579
+347,anorith,Anorith,874,1092
+348,armaldo,Armaldo,1627,2035
+349,feebas,Feebas,157,196
+350,milotic,Milotic,1717,2147
+351,castform,Castform,932,1165
+351,castform_rainy,Castform (Rainy),932,1165
+351,castform_snowy,Castform (Snowy),932,1165
+351,castform_sunny,Castform (Sunny),932,1165
+352,kecleon,Kecleon,1169,1462
+353,shuppet,Shuppet,581,727
+354,banette,Banette,1313,1642
+354,banette_mega,Banette (Mega),2053,2567
+355,duskull,Duskull,403,504
+356,dusclops,Dusclops,909,1136
+357,tropius,Tropius,1109,1386
+358,chimecho,Chimecho,1291,1614
+359,absol,Absol,1443,1805
+359,absol_mega,Absol (Mega),1886,2358
+360,wynaut,Wynaut,305,381
+361,snorunt,Snorunt,507,634
+362,glalie,Glalie,1203,1504
+362,glalie_mega,Glalie (Mega),1845,2307
+363,spheal,Spheal,550,687
+364,sealeo,Sealeo,979,1225
+365,walrein,Walrein,1557,1947
+366,clamperl,Clamperl,726,907
+367,huntail,Huntail,1337,1671
+368,gorebyss,Gorebyss,1425,1781
+369,relicanth,Relicanth,1444,1806
+370,luvdisc,Luvdisc,484,605
+371,bagon,Bagon,660,826
+372,shelgon,Shelgon,1160,1451
+373,salamence,Salamence,2142,2678
+373,salamence_mega,Salamence (Mega),2875,3594
+374,beldum,Beldum,558,697
+375,metang,Metang,983,1229
+376,metagross,Metagross,2166,2708
+376,metagross_mega,Metagross (Mega),2806,3508
+377,regirock,Regirock,1784,2230
+378,regice,Regice,1784,2230
+379,registeel,Registeel,1398,1748
+380,latias,Latias,2006,2507
+380,latias_mega,Latias (Mega),2743,3430
+381,latios,Latios,2178,2723
+381,latios_mega,Latios (Mega),2861,3577
+382,kyogre,Kyogre,2351,2939
+382,kyogre_primal,Kyogre (Primal),3372,4215
+383,groudon,Groudon,2351,2939
+383,groudon_primal,Groudon (Primal),3372,4215
+384,rayquaza,Rayquaza,2191,2739
+384,rayquaza_mega,Rayquaza (Mega),3264,4080
+385,jirachi,Jirachi,1865,2332
+386,deoxys,Deoxys,1806,2257
+386,deoxys_attack,Deoxys (Attack),1474,1842
+386,deoxys_defense,Deoxys (Defense),1299,1624
+386,deoxys_speed,Deoxys (Speed),1645,2056
+387,turtwig,Turtwig,678,848
+388,grotle,Grotle,1080,1350
+389,torterra,Torterra,1677,2096
+390,chimchar,Chimchar,547,683
+391,monferno,Monferno,899,1124
+392,infernape,Infernape,1533,1916
+393,piplup,Piplup,614,767
+394,prinplup,Prinplup,972,1215
+395,empoleon,Empoleon,1657,2072
+396,starly,Starly,410,513
+397,staravia,Staravia,742,927
+398,staraptor,Staraptor,1614,2018
+399,bidoof,Bidoof,412,515
+400,bibarel,Bibarel,1041,1302
+401,kricketot,Kricketot,229,286
+402,kricketune,Kricketune,944,1181
+403,shinx,Shinx,500,625
+404,luxio,Luxio,849,1061
+405,luxray,Luxray,1650,2063
+406,budew,Budew,489,611
+407,roserade,Roserade,1697,2122
+408,cranidos,Cranidos,1040,1300
+409,rampardos,Rampardos,1884,2355
+410,shieldon,Shieldon,509,636
+411,bastiodon,Bastiodon,879,1100
+412,burmy_plant,Burmy (Plant),279,348
+412,burmy_sandy,Burmy (Sandy),279,348
+412,burmy_trash,Burmy (Trash),279,348
+413,wormadam_plant,Wormadam (Plant),1013,1267
+413,wormadam_sandy,Wormadam (Sandy),1013,1267
+413,wormadam_trash,Wormadam (Trash),910,1138
+414,mothim,Mothim,1037,1297
+415,combee,Combee,282,353
+416,vespiquen,Vespiquen,1145,1432
+417,pachirisu,Pachirisu,693,867
+418,buizel,Buizel,602,753
+419,floatzel,Floatzel,1396,1745
+420,cherubi,Cherubi,542,678
+421,cherrim_overcast,Cherrim (Overcast),1170,1462
+421,cherrim_sunny,Cherrim (Sunshine),1170,1462
+422,shellos,Shellos,649,811
+423,gastrodon,Gastrodon,1328,1660
+424,ambipom,Ambipom,1381,1727
+425,drifloon,Drifloon,684,855
+426,drifblim,Drifblim,1361,1701
+427,buneary,Buneary,719,899
+428,lopunny,Lopunny,1177,1471
+428,lopunny_mega,Lopunny (Mega),2140,2675
+429,mismagius,Mismagius,1494,1868
+430,honchkrow,Honchkrow,1549,1937
+431,glameow,Glameow,533,667
+432,purugly,Purugly,1116,1395
+433,chingling,Chingling,574,718
+434,stunky,Stunky,657,822
+435,skuntank,Skuntank,1347,1684
+436,bronzor,Bronzor,344,430
+437,bronzong,Bronzong,1279,1599
+438,bonsly,Bonsly,744,930
+439,mime_jr,Mime (Jr),626,782
+440,happiny,Happiny,212,265
+441,chatot,Chatot,1023,1279
+442,spiritomb,Spiritomb,1184,1480
+443,gible,Gible,635,794
+444,gabite,Gabite,1071,1339
+445,garchomp,Garchomp,2264,2830
+445,garchomp_mega,Garchomp (Mega),3099,3874
+446,munchlax,Munchlax,1081,1351
+447,riolu,Riolu,567,709
+448,lucario,Lucario,1544,1930
+448,lucario_mega,Lucario (Mega),2186,2733
+449,hippopotas,Hippopotas,776,970
+450,hippowdon,Hippowdon,1763,2204
+451,skorupi,Skorupi,576,721
+452,drapion,Drapion,1401,1752
+453,croagunk,Croagunk,544,680
+454,toxicroak,Toxicroak,1421,1777
+455,carnivine,Carnivine,1233,1542
+456,finneon,Finneon,555,694
+457,lumineon,Lumineon,1036,1295
+458,mantyke,Mantyke,713,891
+459,snover,Snover,662,828
+460,abomasnow,Abomasnow,1349,1687
+460,abomasnow_mega,Abomasnow (Mega),1946,2432
+461,weavile,Weavile,1717,2146
+462,magnezone,Magnezone,1831,2289
+463,lickilicky,Lickilicky,1409,1762
+464,rhyperior,Rhyperior,2133,2667
+465,tangrowth,Tangrowth,1731,2164
+466,electivire,Electivire,1759,2199
+467,magmortar,Magmortar,1790,2237
+468,togekiss,Togekiss,1904,2380
+469,yanmega,Yanmega,1683,2104
+470,leafeon,Leafeon,1682,2103
+471,glaceon,Glaceon,1786,2233
+472,gliscor,Gliscor,1538,1923
+473,mamoswine,Mamoswine,1902,2377
+474,porygon_z,Porygon-Z,1866,2333
+475,gallade,Gallade,1767,2209
+475,gallade_mega,Gallade (Mega),2583,3230
+476,probopass,Probopass,1188,1485
+477,dusknoir,Dusknoir,1364,1706
+478,froslass,Froslass,1166,1457
+479,rotom,Rotom,1160,1451
+479,rotom_fan,Rotom (Fan),1474,1842
+479,rotom_frost,Rotom (Frost),1474,1842
+479,rotom_heat,Rotom (Heat),1474,1842
+479,rotom_mow,Rotom (Mow),1474,1842
+479,rotom_wash,Rotom (Wash),1474,1842
+480,uxie,Uxie,1442,1803
+481,mesprit,Mesprit,1747,2184
+482,azelf,Azelf,1834,2293
+483,dialga,Dialga,2307,2884
+483,dialga_origin,Dialga (Origin),2337,2921
+484,palkia,Palkia,2280,2850
+484,palkia_origin,Palkia (Origin),2367,2958
+485,heatran,Heatran,2145,2681
+486,regigigas,Regigigas,2483,3104
+487,giratina_altered,Giratina (Altered),1931,2414
+487,giratina_origin,Giratina (Origin),2105,2631
+488,cresselia,Cresselia,1633,2041
+491,darkrai,Darkrai,2136,2671
+492,shaymin_land,Shaymin (Land),1865,2332
+492,shaymin_sky,Shaymin (Sky),2052,2566
+494,victini,Victini,1865,2332
+495,snivy,Snivy,485,606
+496,servine,Servine,823,1029
+497,serperior,Serperior,1301,1626
+498,tepig,Tepig,618,773
+499,pignite,Pignite,1099,1374
+500,emboar,Emboar,1704,2130
+501,oshawott,Oshawott,597,747
+502,dewott,Dewott,995,1243
+503,samurott,Samurott,1614,2018
+503,samurott_hisuian,Samurott (Hisuian),1601,2001
+504,patrat,Patrat,452,565
+505,watchog,Watchog,1039,1299
+506,lillipup,Lillipup,523,654
+507,herdier,Herdier,904,1130
+508,stoutland,Stoutland,1615,2019
+509,purrloin,Purrloin,441,551
+510,liepard,Liepard,1055,1318
+511,pansage,Pansage,546,683
+512,simisage,Simisage,1343,1679
+513,pansear,Pansear,546,683
+514,simisear,Simisear,1343,1679
+515,panpour,Panpour,546,683
+516,simipour,Simipour,1343,1679
+517,munna,Munna,654,818
+518,musharna,Musharna,1556,1945
+519,pidove,Pidove,484,605
+520,tranquill,Tranquill,824,1030
+521,unfezant,Unfezant,1562,1953
+522,blitzle,Blitzle,504,630
+523,zebstrika,Zebstrika,1387,1734
+524,roggenrola,Roggenrola,688,860
+525,boldore,Boldore,1159,1449
+526,gigalith,Gigalith,1844,2306
+527,woobat,Woobat,580,726
+528,swoobat,Swoobat,980,1226
+529,drilbur,Drilbur,786,983
+530,excadrill,Excadrill,1853,2317
+531,audino,Audino,961,1201
+531,audino_mega,Audino (Mega),1442,1802
+532,timburr,Timburr,751,939
+533,gurdurr,Gurdurr,1239,1549
+534,conkeldurr,Conkeldurr,1907,2384
+535,tympole,Tympole,479,599
+536,palpitoad,Palpitoad,795,994
+537,seismitoad,Seismitoad,1465,1832
+538,throh,Throh,1464,1830
+539,sawk,Sawk,1593,1991
+540,sewaddle,Sewaddle,558,698
+541,swadloon,Swadloon,783,979
+542,leavanny,Leavanny,1474,1843
+543,venipede,Venipede,403,504
+544,whirlipede,Whirlipede,653,817
+545,scolipede,Scolipede,1398,1747
+546,cottonee,Cottonee,400,500
+547,whimsicott,Whimsicott,1151,1439
+548,petilil,Petilil,588,736
+549,lilligant,Lilligant,1457,1821
+549,lilligant_hisuian,Lilligant (Hisuian),1435,1794
+550,basculin,Basculin,1194,1493
+551,sandile,Sandile,592,741
+552,krokorok,Krokorok,810,1013
+553,krookodile,Krookodile,1740,2176
+554,darumaka,Darumaka,823,1030
+554,darumaka_galarian,Darumaka (Galarian),823,1030
+555,darmanitan_galarian_standard,Darmanitan (Galarian),1774,2218
+555,darmanitan_standard,Darmanitan (Standard),1774,2218
+556,maractus,Maractus,1299,1624
+557,dwebble,Dwebble,699,874
+558,crustle,Crustle,1452,1815
+559,scraggy,Scraggy,784,980
+560,scrafty,Scrafty,1304,1631
+561,sigilyph,Sigilyph,1457,1821
+562,yamask,Yamask,561,701
+562,yamask_galarian,Yamask (Galarian),561,701
+563,cofagrigus,Cofagrigus,1299,1624
+564,tirtouga,Tirtouga,850,1063
+565,carracosta,Carracosta,1498,1872
+566,archen,Archen,1052,1316
+567,archeops,Archeops,1903,2379
+568,trubbish,Trubbish,571,714
+569,garbodor,Garbodor,1339,1675
+570,zorua,Zorua,671,839
+570,zorua_hisuian,Zorua (Hisuian),687,859
+571,zoroark,Zoroark,1469,1836
+571,zoroark_hisuian,Zoroark (Hisuian),1494,1868
+572,minccino,Minccino,498,623
+573,cinccino,Cinccino,1281,1601
+574,gothita,Gothita,543,679
+575,gothorita,Gothorita,916,1146
+576,gothitelle,Gothitelle,1382,1728
+577,solosis,Solosis,781,977
+578,duosion,Duosion,1153,1441
+579,reuniclus,Reuniclus,1672,2091
+580,ducklett,Ducklett,489,612
+581,swanna,Swanna,1193,1491
+582,vanillite,Vanillite,590,738
+583,vanillish,Vanillish,909,1136
+584,vanilluxe,Vanilluxe,1612,2015
+585,deerling,Deerling,648,810
+586,sawsbuck,Sawsbuck,1381,1726
+587,emolga,Emolga,933,1166
+588,karrablast,Karrablast,675,844
+589,escavalier,Escavalier,1650,2063
+590,foongus,Foongus,559,699
+591,amoonguss,Amoonguss,1223,1529
+592,frillish,Frillish,718,898
+593,jellicent,Jellicent,1336,1670
+594,alomomola,Alomomola,1239,1549
+595,joltik,Joltik,584,730
+596,galvantula,Galvantula,1260,1575
+597,ferroseed,Ferroseed,537,672
+598,ferrothorn,Ferrothorn,1326,1658
+599,klink,Klink,546,683
+600,klang,Klang,1055,1319
+601,klinklang,Klinklang,1506,1883
+602,tynamo,Tynamo,463,579
+603,eelektrik,Eelektrik,980,1225
+604,eelektross,Eelektross,1561,1952
+605,elgyem,Elgyem,791,989
+606,beheeyem,Beheeyem,1573,1966
+607,litwick,Litwick,575,719
+608,lampent,Lampent,976,1220
+609,chandelure,Chandelure,1867,2335
+610,axew,Axew,782,977
+611,fraxure,Fraxure,1276,1596
+612,haxorus,Haxorus,2053,2566
+613,cubchoo,Cubchoo,610,763
+614,beartic,Beartic,1738,2173
+615,cryogonal,Cryogonal,1598,1998
+616,shelmet,Shelmet,476,595
+617,accelgor,Accelgor,1395,1744
+618,stunfisk,Stunfisk,1235,1544
+618,stunfisk_galarian,Stunfisk (Galarian),1235,1544
+619,mienfoo,Mienfoo,793,992
+620,mienshao,Mienshao,1548,1936
+621,druddigon,Druddigon,1561,1951
+622,golett,Golett,679,849
+623,golurk,Golurk,1630,2038
+624,pawniard,Pawniard,819,1024
+625,bisharp,Bisharp,1625,2031
+626,bouffalant,Bouffalant,1598,1998
+627,rufflet,Rufflet,852,1065
+628,braviary,Braviary,1764,2206
+628,braviary_hisuian,Braviary (Hisuian),1608,2010
+629,vullaby,Vullaby,726,908
+630,mandibuzz,Mandibuzz,1221,1527
+631,heatmor,Heatmor,1368,1711
+632,durant,Durant,1519,1900
+633,deino,Deino,606,758
+634,zweilous,Zweilous,1051,1313
+635,hydreigon,Hydreigon,2071,2589
+636,larvesta,Larvesta,855,1069
+637,volcarona,Volcarona,2075,2594
+638,cobalion,Cobalion,1727,2159
+639,terrakion,Terrakion,2113,2641
+640,virizion,Virizion,1727,2159
+641,tornadus_incarnate,Tornadus (Incarnate),1911,2389
+641,tornadus_therian,Tornadus (Therian),1837,2296
+642,thundurus_incarnate,Thundurus (Incarnate),1911,2389
+642,thundurus_therian,Thundurus (Therian),2091,2614
+643,reshiram,Reshiram,2307,2884
+644,zekrom,Zekrom,2307,2884
+645,landorus_incarnate,Landorus (Incarnate),2050,2563
+645,landorus_therian,Landorus (Therian),2241,2801
+646,kyurem,Kyurem,2042,2553
+646,kyurem_black,Kyurem (Black),2631,3289
+646,kyurem_white,Kyurem (White),2631,3289
+647,keldeo_ordinary,Keldeo (Ordinary),2113,2641
+647,keldeo_resolute,Keldeo (Resolute),2113,2641
+648,meloetta_aria,Meloetta (Aria),2269,2837
+649,genesect,Genesect,1916,2395
+649,genesect_burn,Genesect (Burn),1916,2395
+649,genesect_chill,Genesect (Chill),1916,2395
+649,genesect_douse,Genesect (Douse),1916,2395
+649,genesect_shock,Genesect (Shock),1916,2395
+650,chespin,Chespin,626,783
+651,quilladin,Quilladin,982,1228
+652,chesnaught,Chesnaught,1688,2110
+653,fennekin,Fennekin,587,734
+654,braixen,Braixen,1036,1295
+655,delphox,Delphox,1748,2185
+656,froakie,Froakie,567,709
+657,frogadier,Frogadier,935,1169
+658,greninja,Greninja,1516,1896
+659,bunnelby,Bunnelby,316,395
+660,diggersby,Diggersby,862,1078
+661,fletchling,Fletchling,457,571
+662,fletchinder,Fletchinder,839,1049
+663,talonflame,Talonflame,1260,1575
+664,scatterbug,Scatterbug,281,351
+666,vivillon,Vivillon,1060,1325
+667,litleo,Litleo,814,1018
+668,pyroar,Pyroar,1581,1977
+669,flabebe,Flabebe,607,759
+670,floette,Floette,875,1094
+671,florges,Florges,1848,2310
+672,skiddo,Skiddo,714,893
+673,gogoat,Gogoat,1598,1998
+674,pancham,Pancham,850,1063
+675,pangoro,Pangoro,1658,2073
+676,furfrou,Furfrou,1206,1508
+677,espurr,Espurr,719,899
+678,meowstic_female,Meowstic (Female),1213,1517
+678,meowstic,Meowstic (Male),1213,1517
+679,honedge,Honedge,794,993
+680,doublade,Doublade,1395,1745
+681,aegislash_shield,Aegislash (Shield),882,1103
+682,spritzee,Spritzee,715,894
+683,aromatisse,Aromatisse,1337,1672
+684,swirlix,Swirlix,673,842
+685,slurpuff,Slurpuff,1256,1570
+686,inkay,Inkay,529,662
+687,malamar,Malamar,1347,1685
+687,malamar_mega,Malamar (Mega),1796,2245
+688,binacle,Binacle,540,675
+689,barbaracle,Barbaracle,1528,1911
+690,skrelp,Skrelp,607,759
+691,dragalge,Dragalge,1362,1702
+692,clauncher,Clauncher,621,777
+693,clawitzer,Clawitzer,1579,1974
+694,helioptile,Helioptile,533,666
+695,heliolisk,Heliolisk,1485,1857
+696,tyrunt,Tyrunt,934,1168
+697,tyrantrum,Tyrantrum,1787,2234
+698,amaura,Amaura,779,974
+699,aurorus,Aurorus,1601,2001
+700,sylveon,Sylveon,1753,2192
+701,hawlucha,Hawlucha,1377,1721
+702,dedenne,Dedenne,1051,1315
+703,carbink,Carbink,838,1047
+704,goomy,Goomy,557,697
+705,sliggoo,Sliggoo,1164,1455
+706,goodra,Goodra,2003,2504
+707,klefki,Klefki,1114,1392
+708,phantump,Phantump,642,802
+709,trevenant,Trevenant,1462,1828
+710,pumpkaboo_average,Pumpkaboo (Average),698,872
+710,pumpkaboo_large,Pumpkaboo (Large),711,888
+710,pumpkaboo_small,Pumpkaboo (Small),686,858
+710,pumpkaboo_super,Pumpkaboo (Super),714,893
+711,gourgeist_average,Gourgeist (Average),1366,1707
+711,gourgeist_large,Gourgeist (Large),1440,1801
+711,gourgeist_small,Gourgeist (Small),1288,1610
+711,gourgeist_super,Gourgeist (Super),1504,1880
+712,bergmite,Bergmite,694,868
+713,avalugg,Avalugg,1827,2284
+713,avalugg_hisuian,Avalugg (Hisuian),1975,2469
+714,noibat,Noibat,381,476
+715,noivern,Noivern,1579,1974
+716,xerneas,Xerneas,2160,2701
+717,yveltal,Yveltal,2160,2701
+718,zygarde_10,Zygarde (10% Forme),1357,1696
+718,zygarde,Zygarde (50% Forme),1948,2436
+718,zygarde_complete,Zygarde (Complete Forme),2126,2658
+719,diancie,Diancie,1562,1953
+719,diancie_mega,Diancie (Mega),2483,3104
+720,hoopa,Hoopa,1919,2399
+720,hoopa_unbound,Hoopa (Unbound),2289,2862
+721,volcanion,Volcanion,2073,2592
+722,rowlet,Rowlet,604,755
+723,dartrix,Dartrix,985,1232
+724,decidueye,Decidueye,1585,1982
+724,decidueye_hisuian,Decidueye (Hisuian),1655,2069
+725,litten,Litten,591,739
+726,torracat,Torracat,977,1222
+727,incineroar,Incineroar,1712,2140
+728,popplio,Popplio,645,806
+729,brionne,Brionne,1077,1346
+730,primarina,Primarina,1829,2286
+731,pikipek,Pikipek,520,650
+732,trumbeak,Trumbeak,844,1056
+733,toucannon,Toucannon,1536,1920
+734,yungoos,Yungoos,502,628
+735,gumshoos,Gumshoos,1248,1561
+736,grubbin,Grubbin,562,703
+737,charjabug,Charjabug,970,1212
+738,vikavolt,Vikavolt,1781,2226
+739,crabrawler,Crabrawler,778,973
+740,crabominable,Crabominable,1661,2076
+741,oricorio_baile,Oricorio (Baile),1333,1667
+741,oricorio_pau,Oricorio (Pa'u),1333,1667
+741,oricorio_pom_pom,Oricorio (Pom-Pom),1333,1667
+741,oricorio_sensu,Oricorio (Sensu),1333,1667
+742,cutiefly,Cutiefly,507,634
+743,ribombee,Ribombee,1257,1572
+744,rockruff,Rockruff,543,679
+745,lycanroc_dusk,Lycanroc (Dusk),1543,1929
+745,lycanroc_midday,Lycanroc (Midday),1530,1912
+745,lycanroc_midnight,Lycanroc (Midnight),1568,1960
+747,mareanie,Mareanie,555,694
+748,toxapex,Toxapex,963,1204
+749,mudbray,Mudbray,1081,1351
+750,mudsdale,Mudsdale,1740,2175
+751,dewpider,Dewpider,408,510
+752,araquanid,Araquanid,1044,1305
+753,fomantis,Fomantis,423,529
+754,lurantis,Lurantis,1370,1713
+755,morelull,Morelull,590,738
+756,shiinotic,Shiinotic,1063,1329
+757,salandit,Salandit,641,801
+758,salazzle,Salazzle,1416,1770
+759,stufful,Stufful,772,966
+760,bewear,Bewear,1781,2226
+761,bounsweet,Bounsweet,268,336
+762,steenee,Steenee,432,541
+763,tsareena,Tsareena,1693,2117
+764,comfey,Comfey,1209,1511
+765,oranguru,Oranguru,1400,1750
+766,passimian,Passimian,1733,2166
+767,wimpod,Wimpod,286,358
+768,golisopod,Golisopod,1807,2259
+768,golisopodsh,Golisopod,1807,2259
+769,sandygast,Sandygast,705,881
+770,palossand,Palossand,1396,1745
+775,komala,Komala,1475,1844
+776,turtonator,Turtonator,1270,1587
+777,togedemaru,Togedemaru,1234,1543
+778,mimikyu,Mimikyu,1271,1589
+779,bruxish,Bruxish,1365,1707
+780,drampa,Drampa,1665,2081
+781,dhelmise,Dhelmise,1685,2107
+782,jangmo_o,Jangmo-o,553,692
+783,hakamo_o,Hakamo-o,963,1204
+784,kommo_o,Kommo-o,1890,2363
+785,tapu_koko,Tapu Koko,1810,2263
+786,tapu_lele,Tapu Lele,1996,2496
+787,tapu_bulu,Tapu Bulu,1953,2442
+788,tapu_fini,Tapu Fini,1632,2041
+791,solgaleo,Solgaleo,2310,2887
+792,lunala,Lunala,2310,2887
+793,nihilego,Nihilego,2256,2821
+794,buzzwole,Buzzwole,1977,2472
+795,pheromosa,Pheromosa,1624,2030
+796,xurkitree,Xurkitree,2249,2812
+797,celesteela,Celesteela,1772,2216
+798,kartana,Kartana,2101,2626
+799,guzzlord,Guzzlord,1650,2062
+800,necrozma,Necrozma,2104,2630
+800,necrozma_dawn_wings,Necrozma (Dawn Wings),2342,2928
+800,necrozma_dusk_mane,Necrozma (Dusk Mane),2342,2928
+803,poipole,Poipole,937,1171
+804,naganadel,Naganadel,1813,2266
+805,stakataka,Stakataka,1882,2353
+806,blacephalon,Blacephalon,1884,2355
+807,zeraora,Zeraora,1953,2442
+808,meltan,Meltan,610,762
+809,melmetal,Melmetal,2056,2571
+810,grookey,Grookey,620,775
+811,thwackey,Thwackey,1072,1340
+812,rillaboom,Rillaboom,1899,2374
+813,scorbunny,Scorbunny,627,783
+814,raboot,Raboot,1042,1302
+815,cinderace,Cinderace,1724,2156
+816,sobble,Sobble,627,783
+817,drizzile,Drizzile,1082,1353
+818,inteleon,Inteleon,1693,2117
+819,skwovet,Skwovet,539,674
+820,greedent,Greedent,1354,1693
+821,rookidee,Rookidee,380,476
+822,corvisquire,Corvisquire,779,974
+823,corviknight,Corviknight,1404,1755
+824,blipbug,Blipbug,204,256
+825,dottler,Dottler,588,735
+826,orbeetle,Orbeetle,1270,1588
+827,nickit,Nickit,408,510
+828,thievul,Thievul,1221,1526
+829,gossifleur,Gossifleur,384,480
+830,eldegoss,Eldegoss,1140,1425
+831,wooloo,Wooloo,403,504
+832,dubwool,Dubwool,1252,1565
+835,yamper,Yamper,450,562
+836,boltund,Boltund,1243,1554
+837,rolycoly,Rolycoly,349,437
+838,carkol,Carkol,864,1080
+839,coalossal,Coalossal,1344,1680
+840,applin,Applin,408,510
+841,flapple,Flapple,1409,1761
+842,appletun,Appletun,1401,1751
+843,silicobra,Silicobra,617,772
+844,sandaconda,Sandaconda,1594,1993
+848,toxel,Toxel,415,519
+849,toxtricity,Toxtricity,1486,1858
+850,sizzlipede,Sizzlipede,599,749
+851,centiskorch,Centiskorch,1708,2136
+852,clobbopus,Clobbopus,650,812
+853,grapploct,Grapploct,1522,1903
+854,sinistea,Sinistea,650,813
+855,polteageist,Polteageist,1747,2185
+856,hatenna,Hatenna,492,615
+857,hattrem,Hattrem,934,1167
+858,hatterene,Hatterene,1616,2020
+859,impidimp,Impidimp,461,576
+860,morgrem,Morgrem,824,1030
+861,grimmsnarl,Grimmsnarl,1628,2036
+862,obstagoon,Obstagoon,1515,1894
+863,perrserker,Perrserker,1363,1704
+864,cursola,Cursola,1750,2188
+865,sirfetchd,Sirfetch'd,1706,2132
+866,mr_rime,Mr. Rime,1615,2019
+867,runerigus,Runerigus,1299,1624
+870,falinks,Falinks,1347,1683
+870,falinks_mega,Falinks (Mega),2097,2621
+872,snom,Snom,302,377
+873,frosmoth,Frosmoth,1558,1948
+874,stonjourner,Stonjourner,1839,2299
+876,indeedee_female,Indeedee (Female),1370,1712
+876,indeedee_male,Indeedee (Male),1396,1745
+877,morpeko_full_belly,Morpeko (Full Belly),1110,1387
+884,duraludon,Duraludon,1753,2191
+885,dreepy,Dreepy,438,548
+886,drakloak,Drakloak,943,1180
+887,dragapult,Dragapult,2018,2523
+888,zacian_crowned_sword,Zacian (Crowned Sword),2845,3556
+888,zacian_hero,Zacian (Hero),2188,2735
+889,zamazenta_crowned_shield,Zamazenta (Crowned Shield),2384,2980
+889,zamazenta_hero,Zamazenta (Hero),2188,2735
+890,eternatus,Eternatus,2530,3163
+891,kubfu,Kubfu,970,1212
+892,urshifu_rapid_strike,Urshifu (Rapid Strike),2060,2576
+892,urshifu_single_strike,Urshifu (Single Strike),2060,2576
+893,zarude,Zarude,2190,2738
+894,regieleki,Regieleki,1602,2002
+895,regidrago,Regidrago,1699,2124
+899,wyrdeer,Wyrdeer,1561,1952
+900,kleavor,Kleavor,1798,2247
+901,ursaluna,Ursaluna,2202,2753
+903,sneasler,Sneasler,1841,2302
+904,overqwil,Overqwil,1683,2104
+905,enamorus_incarnate,Enamorus (Incarnate),1957,2447
+905,enamorus_therian,Enamorus (Therian),1935,2420
+906,sprigatito,Sprigatito,579,725
+907,floragato,Floragato,959,1199
+908,meowscarada,Meowscarada,1614,2017
+909,fuecoco,Fuecoco,644,805
+910,crocalor,Crocalor,1106,1383
+911,skeledirge,Skeledirge,1729,2162
+912,quaxly,Quaxly,614,768
+913,quaxwell,Quaxwell,1014,1268
+914,quaquaval,Quaquaval,1724,2155
+915,lechonk,Lechonk,418,523
+916,oinkologne,Oinkologne,1490,1863
+916,oinkologne_female,Oinkologne (Female),1424,1781
+917,tarountula,Tarountula,326,408
+918,spidops,Spidops,964,1205
+919,nymble,Nymble,338,423
+920,lokix,Lokix,1323,1655
+921,pawmi,Pawmi,363,454
+922,pawmo,Pawmo,742,928
+923,pawmot,Pawmot,1505,1882
+924,tandemaus,Tandemaus,509,636
+925,maushold,Maushold,1134,1418
+926,fidough,Fidough,563,703
+927,dachsbun,Dachsbun,1198,1497
+928,smoliv,Smoliv,488,610
+929,dolliv,Dolliv,818,1023
+930,arboliva,Arboliva,1691,2113
+931,squawkabilly,Squawkabilly,1127,1409
+932,nacli,Nacli,552,690
+933,naclstack,Naclstack,738,923
+934,garganacl,Garganacl,1549,1936
+935,charcadet,Charcadet,418,523
+936,armarouge,Armarouge,1834,2292
+937,ceruledge,Ceruledge,1812,2265
+938,tadbulb,Tadbulb,520,651
+939,bellibolt,Bellibolt,1521,1902
+940,wattrel,Wattrel,472,590
+941,kilowattrel,Kilowattrel,1396,1745
+944,shroodle,Shroodle,531,664
+945,grafaiai,Grafaiai,1293,1617
+948,toedscool,Toedscool,594,743
+949,toedscruel,Toedscruel,1384,1730
+950,klawf,Klawf,1373,1716
+955,flittle,Flittle,401,501
+956,espathra,Espathra,1415,1769
+957,tinkatink,Tinkatink,491,614
+958,tinkatuff,Tinkatuff,746,933
+959,tinkaton,Tinkaton,1286,1607
+960,wiglett,Wiglett,328,410
+961,wugtrio,Wugtrio,1082,1353
+962,bombirdier,Bombirdier,1421,1777
+965,varoom,Varoom,650,813
+966,revavroom,Revavroom,1686,2108
+968,orthworm,Orthworm,1313,1642
+969,glimmet,Glimmet,959,1200
+970,glimmora,Glimmora,1870,2338
+971,greavard,Greavard,580,726
+972,houndstone,Houndstone,1436,1795
+973,flamigo,Flamigo,1575,1969
+974,cetoddle,Cetoddle,742,928
+975,cetitan,Cetitan,1778,2223
+977,dondozo,Dondozo,1712,2140
+978,tatsugiri_curly,Tatsugiri (Curly),1569,1962
+978,tatsugiri_droopy,Tatsugiri (Droopy),1569,1962
+978,tatsugiri_stretchy,Tatsugiri (Stretchy),1569,1962
+979,annihilape,Annihilape,1867,2334
+980,clodsire,Clodsire,1115,1394
+982,dudunsparce,Dudunsparce,1565,1957
+983,kingambit,Kingambit,2065,2581
+996,frigibax,Frigibax,712,891
+997,arctibax,Arctibax,1195,1494
+998,baxcalibur,Baxcalibur,2028,2535
+999,gimmighoul,Gimmighoul,631,788
+1000,gholdengo,Gholdengo,2009,2512
+1011,dipplin,Dipplin,1355,1694
+1012,poltchageist,Poltchageist,650,813
+1013,sinistcha,Sinistcha,1690,2112
+1019,hydrapple,Hydrapple,1848,2310

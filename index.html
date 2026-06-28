@@ -339,6 +339,37 @@
   .copy-btn.copied { background: var(--live); color: #0f1623; border-color: transparent; }
   .copy-btn .ico { opacity: .7; }
 
+  /* ---------- IV100 查詢器 ---------- */
+  .iv-input {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  .iv-input:focus { outline: none; border-color: var(--accent); }
+  #ivResults { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-top: 6px; }
+  .iv-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--accent);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .iv-card .iv-name { font-size: 1.15rem; font-weight: 700; }
+  .iv-card .iv-en { font-size: 0.78rem; color: var(--text-dim); margin-bottom: 10px; }
+  .iv-card .iv-dex { font-size: 0.72rem; color: var(--text-dim); float: right; }
+  .iv-cps { display: flex; gap: 10px; }
+  .iv-cp { flex: 1; text-align: center; background: var(--bg); border-radius: 9px; padding: 8px 4px; }
+  .iv-cp .lv { font-size: 0.72rem; color: var(--text-dim); }
+  .iv-cp .val { font-size: 1.4rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .iv-cp.l20 .val { color: var(--accent); }
+  .iv-cp.l25 .val { color: var(--spotlight); }
+
   .toast {
     position: fixed;
     left: 50%;
@@ -382,6 +413,7 @@
   <div class="tabs" id="tabs">
     <span class="tab active" data-tab="calendar">📅 活動行事曆</span>
     <span class="tab" data-tab="spoof">✈️ 全球花點座標</span>
+    <span class="tab" data-tab="iv">💯 IV100查詢器</span>
   </div>
 
   <!-- ===== 分頁一:活動行事曆 ===== -->
@@ -441,6 +473,20 @@
     </div>
   </div>
 
+  <!-- ===== 分頁三:IV100 查詢器 ===== -->
+  <div id="panel-iv" style="display:none">
+    <div class="spoof-intro">
+      💯 <b>IV100 查詢器</b>:輸入寶可夢<b>繁體中文名稱</b>查 100% IV 的 CP。
+      <b>L20</b> = 等級20(無天氣加成團體戰/孵蛋/調查捕捉值);<b>L25</b> = 等級25(有天氣加成捕捉值)。看到這數字就是滿 IV!
+    </div>
+    <div class="spoof-controls">
+      <input type="text" id="ivSearch" class="iv-input" placeholder="輸入名稱,如:噴火龍、超夢、烈空坐、超級暴鯉龍" autocomplete="off">
+      <button id="ivRandom" class="copy-btn">🎲 隨機一隻</button>
+    </div>
+    <div class="window-note" id="ivCount"></div>
+    <div id="ivResults"></div>
+  </div>
+
   <footer>
     資料由寶友手動維護 · 最後更新請見 events.js<br>
     時間以台灣時間 (UTC+8) 為準
@@ -451,6 +497,7 @@
 
 <script src="events.js"></script>
 <script src="hotspots.js"></script>
+<script src="iv100.js"></script>
 <script>
 (function () {
   const TYPE_LABEL = {
@@ -741,18 +788,66 @@
   }));
 
   // 分頁切換
+  const PANELS = { calendar: "panel-calendar", spoof: "panel-spoof", iv: "panel-iv" };
   document.getElementById("tabs").addEventListener("click", e => {
     const tab = e.target.closest(".tab");
     if (!tab) return;
     document.querySelectorAll("#tabs .tab").forEach(t => t.classList.toggle("active", t === tab));
-    const isCal = tab.dataset.tab === "calendar";
-    document.getElementById("panel-calendar").style.display = isCal ? "" : "none";
-    document.getElementById("panel-spoof").style.display = isCal ? "none" : "";
-    if (!isCal) renderSpoof();
+    const sel = tab.dataset.tab;
+    Object.entries(PANELS).forEach(([k, id]) => {
+      document.getElementById(id).style.display = (k === sel) ? "" : "none";
+    });
+    if (sel === "spoof") renderSpoof();
+    if (sel === "iv") renderIV();
   });
 
   renderSpoof();
   setInterval(renderSpoof, 60000); // 每分鐘更新「進行中」標示
+
+
+  /* ====================================================================
+   *  分頁三:IV100 查詢器
+   * ==================================================================== */
+  const $ivSearch = document.getElementById("ivSearch");
+  const $ivResults = document.getElementById("ivResults");
+  const $ivCount = document.getElementById("ivCount");
+  const DB = (typeof IV100 !== "undefined") ? IV100 : [];
+
+  function ivCard(p) {
+    return `
+      <div class="iv-card">
+        <span class="iv-dex">#${p.dex}</span>
+        <div class="iv-name">${esc(p.n)}</div>
+        <div class="iv-en">${esc(p.en)}</div>
+        <div class="iv-cps">
+          <div class="iv-cp l20"><div class="lv">L20 滿IV</div><div class="val">${p.l20}</div></div>
+          <div class="iv-cp l25"><div class="lv">L25 滿IV</div><div class="val">${p.l25}</div></div>
+        </div>
+      </div>`;
+  }
+
+  function renderIV() {
+    const q = ($ivSearch.value || "").trim().toLowerCase();
+    let res;
+    if (!q) {
+      $ivCount.textContent = `資料庫共 ${DB.length} 筆 — 輸入名稱開始查詢,或按「隨機一隻」`;
+      $ivResults.innerHTML = "";
+      return;
+    }
+    res = DB.filter(p => p.n.toLowerCase().includes(q) || p.en.toLowerCase().includes(q) || String(p.dex) === q);
+    $ivCount.textContent = `找到 ${res.length} 筆` + (res.length > 60 ? "(僅顯示前 60 筆,請再輸入細一點)" : "");
+    $ivResults.innerHTML = res.slice(0, 60).map(ivCard).join("") ||
+      `<div class="empty">查無「${esc($ivSearch.value)}」🔍<br>試試只打部分名稱,例如「噴火」。</div>`;
+  }
+
+  $ivSearch.addEventListener("input", renderIV);
+  document.getElementById("ivRandom").addEventListener("click", () => {
+    if (!DB.length) return;
+    const p = DB[Math.floor(Math.random() * DB.length)];
+    $ivSearch.value = "";
+    $ivCount.textContent = `🎲 隨機:${p.n}`;
+    $ivResults.innerHTML = ivCard(p);
+  });
 })();
 </script>
 </body>
