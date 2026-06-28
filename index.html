@@ -396,8 +396,8 @@
         <span class="chip" data-type="special"><span class="dot"></span>季節/特殊</span>
       </div>
       <div class="views" id="views">
-        <span class="chip" data-view="live">進行中</span>
-        <span class="chip active" data-view="upcoming">即將到來</span>
+        <span class="chip active" data-view="live">進行中</span>
+        <span class="chip" data-view="upcoming">即將到來</span>
         <span class="chip" data-view="past">已結束</span>
         <span class="chip" data-view="all">全部</span>
       </div>
@@ -462,7 +462,7 @@
   };
 
   let activeType = "all";
-  let activeView = "upcoming";
+  let activeView = "live";
 
   function parse(s) {
     // "YYYY-MM-DD HH:mm" -> Date (本地時區)
