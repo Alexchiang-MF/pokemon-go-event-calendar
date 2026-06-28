@@ -197,6 +197,12 @@
     left: 2px;
     color: var(--accent);
   }
+  /* 名稱後的 (L20/L25) IV100 CP 數值 */
+  .cp {
+    color: #5eead4;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
   .note {
     margin-top: 10px;
     font-size: 0.82rem;
@@ -563,8 +569,8 @@
     card.className = "card" + (isPast ? " past" : "");
     card.dataset.type = ev.type;
 
-    const hl = (ev.highlights || []).map(h => `<li>${esc(h)}</li>`).join("");
-    const note = ev.note ? `<div class="note">📝 ${esc(ev.note)}</div>` : "";
+    const hl = (ev.highlights || []).map(h => `<li>${cpColor(h)}</li>`).join("");
+    const note = ev.note ? `<div class="note">📝 ${cpColor(ev.note)}</div>` : "";
 
     card.innerHTML = `
       <div class="card-head">
@@ -583,6 +589,11 @@
     return String(s).replace(/[&<>"']/g, c => (
       { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
     ));
+  }
+
+  // 先跳脫,再把 (數字/數字) 的 IV100 CP 包成彩色 span
+  function cpColor(s) {
+    return esc(s).replace(/\((\d+\/\d+)\)/g, '<span class="cp">($1)</span>');
   }
 
   function render() {
