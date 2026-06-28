@@ -396,8 +396,10 @@
         <span class="chip" data-type="special"><span class="dot"></span>季節/特殊</span>
       </div>
       <div class="views" id="views">
-        <span class="chip active" data-view="upcoming">即將到來 / 進行中</span>
-        <span class="chip" data-view="all">全部 (含已結束)</span>
+        <span class="chip" data-view="live">進行中</span>
+        <span class="chip active" data-view="upcoming">即將到來</span>
+        <span class="chip" data-view="past">已結束</span>
+        <span class="chip" data-view="all">全部</span>
       </div>
     </div>
 
@@ -541,36 +543,49 @@
     const list = document.getElementById("list");
     list.innerHTML = "";
 
+    // 已結束活動只保留近兩個月(結束時間早於此即不顯示)
+    const cutoff = new Date(now.getFullYear(), now.getMonth() - 2, now.getDate());
+
     let items = (typeof EVENTS !== "undefined" ? EVENTS : []).map(ev => ({
       ev, start: parse(ev.start), end: parse(ev.end)
     }));
 
     if (activeType !== "all") items = items.filter(x => x.ev.type === activeType);
-    if (activeView === "upcoming") items = items.filter(x => x.end >= now);
 
-    // 進行中與未來: 依開始時間升冪; 已結束: 依結束時間降冪 排最後
-    const active = items.filter(x => x.end >= now).sort((a, b) => a.start - b.start);
-    const past = items.filter(x => x.end < now).sort((a, b) => b.end - a.end);
+    // 三種狀態分組
+    const live = items.filter(x => x.start <= now && now <= x.end).sort((a, b) => a.start - b.start);
+    const upcoming = items.filter(x => now < x.start).sort((a, b) => a.start - b.start);
+    // 已結束: 依結束時間降冪,且僅保留近兩個月
+    const past = items.filter(x => x.end < now && x.end >= cutoff).sort((a, b) => b.end - a.end);
 
-    if (active.length === 0 && past.length === 0) {
-      list.innerHTML = `<div class="empty">這個篩選條件下沒有活動 🔍<br>試試切換類型,或在 events.js 加入活動。</div>`;
+    // 依檢視範圍決定要顯示哪些區塊
+    let groups;
+    if (activeView === "live") {
+      groups = [["進行中", live]];
+    } else if (activeView === "upcoming") {
+      groups = [["即將到來", upcoming]];
+    } else if (activeView === "past") {
+      groups = [["已結束(近兩個月)", past]];
+    } else { // all
+      groups = [
+        ["進行中 & 即將到來", live.concat(upcoming)],
+        ["已結束(近兩個月)", past]
+      ];
+    }
+
+    if (groups.every(([, arr]) => arr.length === 0)) {
+      list.innerHTML = `<div class="empty">這個篩選條件下沒有活動 🔍<br>試試切換類型或檢視範圍。</div>`;
       return;
     }
 
-    if (active.length) {
+    groups.forEach(([label, arr]) => {
+      if (!arr.length) return;
       const lbl = document.createElement("div");
       lbl.className = "group-label";
-      lbl.textContent = "進行中 & 即將到來";
+      lbl.textContent = label;
       list.appendChild(lbl);
-      active.forEach(x => list.appendChild(buildCard(x.ev, now)));
-    }
-    if (past.length) {
-      const lbl = document.createElement("div");
-      lbl.className = "group-label";
-      lbl.textContent = "已結束";
-      list.appendChild(lbl);
-      past.forEach(x => list.appendChild(buildCard(x.ev, now)));
-    }
+      arr.forEach(x => list.appendChild(buildCard(x.ev, now)));
+    });
   }
 
   // ---- 控制列事件 ----
