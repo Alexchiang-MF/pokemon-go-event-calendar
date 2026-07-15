@@ -35,13 +35,17 @@ const alias = {
   '眷戀雲': '眷戀雲(化身)',
   '蒼響(百戰勇者)': '蒼響(英雄)',
   '藏瑪然特(百戰勇者)': '藏瑪然特(英雄)',
+  '乘龍': '拉普拉斯',
+  '米立龍(上弓姿勢)': '米立龍(下垂)',   // 三姿勢 CP 相同,一律對到已收錄的形態名
+  '米立龍(下垂姿勢)': '米立龍(下垂)',
+  '米立龍(平挺姿勢)': '米立龍(下垂)',
 };
 function look(name) {
   const k = alias[name] || name;
   if (map[norm(k)]) return map[norm(k)];
   const k3 = k.replace(/形態\)/g, ')'); // 「(化身形態)/(攻擊形態)…」-> 「(化身)/(攻擊)…」
   if (k3 !== k && map[norm(k3)]) return map[norm(k3)];
-  const k2 = k.replace(/^(暗影|極巨化)/, ''); // 暗影/極巨化 用本體 CP
+  const k2 = k.replace(/^(暗影|超極巨化|極巨化)/, ''); // 暗影/極巨化/超極巨化 用本體 CP
   if (k2 !== k && map[norm(k2)]) return map[norm(k2)];
   return null;
 }
