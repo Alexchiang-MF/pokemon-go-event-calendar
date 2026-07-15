@@ -39,6 +39,8 @@ const alias = {
 function look(name) {
   const k = alias[name] || name;
   if (map[norm(k)]) return map[norm(k)];
+  const k3 = k.replace(/形態\)/g, ')'); // 「(化身形態)/(攻擊形態)…」-> 「(化身)/(攻擊)…」
+  if (k3 !== k && map[norm(k3)]) return map[norm(k3)];
   const k2 = k.replace(/^(暗影|極巨化)/, ''); // 暗影/極巨化 用本體 CP
   if (k2 !== k && map[norm(k2)]) return map[norm(k2)];
   return null;
